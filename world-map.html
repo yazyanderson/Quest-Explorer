@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>World Map | Quest Explorer</title>
+<meta name="description" content="Six regions of Hollowmere with difficulty and progress.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Caprasimo&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header"><div class="wrap">
+<a class="brand" href="index.html">Quest Explorer</a>
+<nav aria-label="Main"><ul class="nav">
+<li><a class="nav-link" href="index.html">Home</a></li>
+<li><a class="nav-link" href="world-map.html" aria-current="page">World Map</a></li>
+<li><a class="nav-link" href="mission.html">Mission</a></li>
+<li><a class="nav-link" href="team.html">Team</a></li>
+</ul></nav></div></header>
+<main id="main">
+<section class="wrap" aria-labelledby="map-h">
+<h1 id="map-h">World map</h1>
+<p>Six regions, each with a mission. Difficulty is shown by badge text, and progress by the bar and its percentage.</p>
+<div class="map">
+<a class="card region" href="mission.html#objectives"><span class="badge easy">Easy</span><h2>Mossgate Village</h2><p>Where every quest starts.</p><p class="state">100% complete</p><div class="progress" aria-hidden="true" style="--value:100%"><span></span></div></a>
+<a class="card region peaks wide" href="mission.html"><span class="badge medium">Medium</span><h2>Lantern Pass</h2><p>A mountain trail of unlit beacons. Your current checkpoint.</p><p class="state">60% complete</p><div class="progress" aria-hidden="true" style="--value:60%"><span></span></div></a>
+<a class="card region" href="mission.html"><span class="badge medium">Medium</span><h2>Reedmarsh</h2><p>Fog, frogs, and floating stones.</p><p class="state">20% complete</p><div class="progress" aria-hidden="true" style="--value:20%"><span></span></div></a>
+<a class="card region coast wide" href="mission.html"><span class="badge hard">Hard</span><h2>Sunken Harbor</h2><p>A drowned town with one bell left to ring.</p><p class="state">0% complete</p><div class="progress" aria-hidden="true" style="--value:0%"><span></span></div></a>
+<a class="card region dunes" href="mission.html"><span class="badge easy">Easy</span><h2>Amber Dunes</h2><p>Follow the wind-carved signposts.</p><p class="state">0% complete</p><div class="progress" aria-hidden="true" style="--value:0%"><span></span></div></a>
+<a class="card region peaks" href="mission.html"><span class="badge hard">Hard</span><h2>Lantern Gate</h2><p>The final door. Locked until Lantern Pass is done.</p><p class="state">Locked</p><div class="progress" aria-hidden="true" style="--value:0%"><span></span></div></a>
+</div>
+</section>
+<section class="wrap" aria-labelledby="legend-h">
+<h2 id="legend-h">Legend and route</h2>
+<div class="flex"><span class="badge easy">Easy</span><span class="badge medium">Medium</span><span class="badge hard">Hard</span></div>
+<ol class="route">
+<li class="done"><span class="dot" aria-hidden="true">✓</span><div><h3>Mossgate</h3><span class="state">Complete</span></div></li>
+<li class="current"><span class="dot" aria-hidden="true">2</span><div><h3>Lantern Pass</h3><span class="state">Current</span></div></li>
+<li class="locked"><span class="dot" aria-hidden="true">3</span><div><h3>Lantern Gate</h3><span class="state">Locked</span></div></li>
+</ol>
+</section>
+</main>
+<footer><div class="wrap"><p>Quest Explorer is a student HTML and CSS project. Fonts: Caprasimo and Atkinson Hyperlegible via Google Fonts (SIL Open Font License). All artwork is made with CSS. <a href="team.html">Meet the team</a>.</p></div></footer>
+</body>
+</html>
