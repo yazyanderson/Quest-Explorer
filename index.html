@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home | Quest Explorer</title>
+<meta name="description" content="Explore the realm of Hollowmere through six regions and a guided route.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Caprasimo&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header"><div class="wrap">
+<a class="brand" href="index.html">Quest Explorer</a>
+<nav aria-label="Main"><ul class="nav">
+<li><a class="nav-link" href="index.html" aria-current="page">Home</a></li>
+<li><a class="nav-link" href="world-map.html">World Map</a></li>
+<li><a class="nav-link" href="mission.html">Mission</a></li>
+<li><a class="nav-link" href="team.html">Team</a></li>
+</ul></nav></div></header>
+<main id="main">
+<div class="hero"><div class="lantern" aria-hidden="true"></div><div class="wrap">
+<h1>Cross Hollowmere,<br>one checkpoint at a time.</h1>
+<p>Pick a region, take on a mission, and follow the route to the Lantern Gate.</p>
+<a class="btn" href="world-map.html">Begin your quest</a>
+</div></div>
+<section class="wrap" aria-labelledby="route-h">
+<h2 id="route-h">Your route</h2>
+<p>Every journey passes three checkpoints. Finish one to unlock the next.</p>
+<ol class="route">
+<li class="done"><span class="dot" aria-hidden="true">✓</span><div><h3>Mossgate Village</h3><span class="state">Complete</span></div></li>
+<li class="current"><span class="dot" aria-hidden="true">2</span><div><h3>Lantern Pass</h3><span class="state">Current checkpoint</span></div></li>
+<li class="locked"><span class="dot" aria-hidden="true">3</span><div><h3>Lantern Gate</h3><span class="state">Locked</span></div></li>
+</ol>
+</section>
+<section class="wrap" aria-labelledby="feat-h">
+<h2 id="feat-h">Featured missions</h2>
+<div class="grid cols-3">
+<a class="card" href="mission.html#objectives"><span class="badge easy">Easy</span><h3>Light the Lanterns</h3><p>Climb Lantern Pass and relight the beacons before dusk.</p></a>
+<a class="card" href="world-map.html"><span class="badge medium">Medium</span><h3>Cross the Reedmarsh</h3><p>Find the safe stones through the fog.</p></a>
+<a class="card" href="world-map.html"><span class="badge hard">Hard</span><h3>Wake the Sunken Bell</h3><p>Dive the old harbor and ring the bell once.</p></a>
+</div>
+</section>
+</main>
+<footer><div class="wrap"><p>Quest Explorer is a student HTML and CSS project. Fonts: Caprasimo and Atkinson Hyperlegible via Google Fonts (SIL Open Font License). All artwork is made with CSS. <a href="team.html">Meet the team</a>.</p></div></footer>
+</body>
+</html>
